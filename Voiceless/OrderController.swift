@@ -128,7 +128,9 @@ class OrderController: UITableViewController
     
     @IBAction func askConfirmOrder(_ sender: Any) {
         let myContext = LAContext()
-        let myLocalizedReasonString = "Souhaitez-vous confirmer cette commande pour un total de 0.00€?"
+        
+        let formatterAmount = amountFormatter.string(from: NSNumber(value: total)) ?? "0.00€"
+        let myLocalizedReasonString = "Souhaitez-vous confirmer cette commande pour un total de \(formatterAmount) ?"
         
         var authError: NSError? = nil
         
@@ -154,6 +156,8 @@ class OrderController: UITableViewController
         }
     }
 
+    // - MARK: Lifecycle
+    
     override func viewDidLoad() {
         cookieQtyFld.inputAccessoryView = keyboardAccessory
         muffinQtyFld.inputAccessoryView = keyboardAccessory
@@ -162,21 +166,7 @@ class OrderController: UITableViewController
         updateTotalAmount()
     }
     
-    
-    func parseValue(_ text: String?) -> Int {
-        let number = formatter.number(from: text ?? "0") ?? 0
-        
-        var value = number.intValue
-        
-        if value < 0 {
-            value = 0
-        }
-        else if value > 10 {
-            value = 10
-        }
-        
-        return value
-    }
+    // MARK: Internal utilities
     
     func clearOrder() {
         // Reset coffe
@@ -215,7 +205,25 @@ class OrderController: UITableViewController
         totalLbl.text = amountFormatter.string(from: NSNumber(value: total))
     }
     
+    
+    
     // MARK: - Utility methods
+    
+    func parseValue(_ text: String?) -> Int {
+        let number = formatter.number(from: text ?? "0") ?? 0
+        
+        var value = number.intValue
+        
+        if value < 0 {
+            value = 0
+        }
+        else if value > 10 {
+            value = 10
+        }
+        
+        return value
+    }
+    
     
     func createCancelController() -> UIAlertController {
         let controller = UIAlertController(

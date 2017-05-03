@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48CBD381EB9F90300035C20 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CBD371EB9F90300035C20 /* CoffeeCell.swift */; };
 		E4EAD7271EB556FE00211EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */; };
 		E4EAD7291EB556FE00211EB9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7281EB556FE00211EB9 /* FirstViewController.swift */; };
 		E4EAD72B1EB556FE00211EB9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD72A1EB556FE00211EB9 /* SecondViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E48CBD371EB9F90300035C20 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
 		E4EAD7231EB556FE00211EB9 /* AllDayJava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDayJava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EAD7281EB556FE00211EB9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				E4EAD7341EB556FE00211EB9 /* Info.plist */,
 				E4EAD73C1EB8954200211EB9 /* OrderController.swift */,
 				E4EAD73E1EB8956500211EB9 /* Order.swift */,
+				E48CBD371EB9F90300035C20 /* CoffeeCell.swift */,
 			);
 			name = AllDayJava;
 			path = Voiceless;
@@ -152,6 +155,7 @@
 				E4EAD73F1EB8956500211EB9 /* Order.swift in Sources */,
 				E4EAD7271EB556FE00211EB9 /* AppDelegate.swift in Sources */,
 				E4EAD7291EB556FE00211EB9 /* FirstViewController.swift in Sources */,
+				E48CBD381EB9F90300035C20 /* CoffeeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +321,7 @@
 				E4EAD7391EB556FE00211EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
