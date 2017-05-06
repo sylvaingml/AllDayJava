@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42DC0F71EBA88DB00D73E13 /* AllDayJavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DC0F61EBA88DB00D73E13 /* AllDayJavaUITests.swift */; };
 		E48CBD381EB9F90300035C20 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CBD371EB9F90300035C20 /* CoffeeCell.swift */; };
 		E4EAD7271EB556FE00211EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */; };
 		E4EAD7291EB556FE00211EB9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7281EB556FE00211EB9 /* FirstViewController.swift */; };
@@ -18,7 +19,20 @@
 		E4EAD73F1EB8956500211EB9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD73E1EB8956500211EB9 /* Order.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E42DC0F91EBA88DB00D73E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4EAD71B1EB556FE00211EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4EAD7221EB556FE00211EB9;
+			remoteInfo = AllDayJava;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E42DC0F41EBA88DB00D73E13 /* AllDayJavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllDayJavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42DC0F61EBA88DB00D73E13 /* AllDayJavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDayJavaUITests.swift; sourceTree = "<group>"; };
+		E42DC0F81EBA88DB00D73E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48CBD371EB9F90300035C20 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
 		E4EAD7231EB556FE00211EB9 /* AllDayJava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDayJava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E42DC0F11EBA88DB00D73E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4EAD7201EB556FE00211EB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E42DC0F51EBA88DB00D73E13 /* AllDayJavaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E42DC0F61EBA88DB00D73E13 /* AllDayJavaUITests.swift */,
+				E42DC0F81EBA88DB00D73E13 /* Info.plist */,
+			);
+			path = AllDayJavaUITests;
+			sourceTree = "<group>";
+		};
 		E4EAD71A1EB556FE00211EB9 = {
 			isa = PBXGroup;
 			children = (
 				E4EAD7251EB556FE00211EB9 /* AllDayJava */,
+				E42DC0F51EBA88DB00D73E13 /* AllDayJavaUITests */,
 				E4EAD7241EB556FE00211EB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				E4EAD7231EB556FE00211EB9 /* AllDayJava.app */,
+				E42DC0F41EBA88DB00D73E13 /* AllDayJavaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +112,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E42DC0F31EBA88DB00D73E13 /* AllDayJavaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E42DC0FD1EBA88DB00D73E13 /* Build configuration list for PBXNativeTarget "AllDayJavaUITests" */;
+			buildPhases = (
+				E42DC0F01EBA88DB00D73E13 /* Sources */,
+				E42DC0F11EBA88DB00D73E13 /* Frameworks */,
+				E42DC0F21EBA88DB00D73E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E42DC0FA1EBA88DB00D73E13 /* PBXTargetDependency */,
+			);
+			name = AllDayJavaUITests;
+			productName = AllDayJavaUITests;
+			productReference = E42DC0F41EBA88DB00D73E13 /* AllDayJavaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E4EAD7221EB556FE00211EB9 /* AllDayJava */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4EAD7371EB556FE00211EB9 /* Build configuration list for PBXNativeTarget "AllDayJava" */;
@@ -107,6 +157,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "S.G. inTech";
 				TargetAttributes = {
+					E42DC0F31EBA88DB00D73E13 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KC7UKYADNB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4EAD7221EB556FE00211EB9;
+					};
 					E4EAD7221EB556FE00211EB9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = KC7UKYADNB;
@@ -128,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				E4EAD7221EB556FE00211EB9 /* AllDayJava */,
+				E42DC0F31EBA88DB00D73E13 /* AllDayJavaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E42DC0F21EBA88DB00D73E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4EAD7211EB556FE00211EB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +210,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E42DC0F01EBA88DB00D73E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42DC0F71EBA88DB00D73E13 /* AllDayJavaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4EAD71F1EB556FE00211EB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +232,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E42DC0FA1EBA88DB00D73E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4EAD7221EB556FE00211EB9 /* AllDayJava */;
+			targetProxy = E42DC0F91EBA88DB00D73E13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E4EAD72C1EB556FE00211EB9 /* Main.storyboard */ = {
@@ -181,6 +261,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E42DC0FB1EBA88DB00D73E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KC7UKYADNB;
+				INFOPLIST_FILE = AllDayJavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.AllDayJavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AllDayJava;
+			};
+			name = Debug;
+		};
+		E42DC0FC1EBA88DB00D73E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KC7UKYADNB;
+				INFOPLIST_FILE = AllDayJavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.AllDayJavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AllDayJava;
+			};
+			name = Release;
+		};
 		E4EAD7351EB556FE00211EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +411,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E42DC0FD1EBA88DB00D73E13 /* Build configuration list for PBXNativeTarget "AllDayJavaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42DC0FB1EBA88DB00D73E13 /* Debug */,
+				E42DC0FC1EBA88DB00D73E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E4EAD71E1EB556FE00211EB9 /* Build configuration list for PBXProject "AllDayJava" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

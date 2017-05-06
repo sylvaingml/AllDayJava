@@ -9,7 +9,7 @@
 import UIKit
 import LocalAuthentication
 
-class OrderController: UITableViewController
+class OrderController: UITableViewController, UITextFieldDelegate
 {
     var catalog = Catalog()
     var order: Order = Order()
@@ -134,7 +134,7 @@ class OrderController: UITableViewController
         
         var authError: NSError? = nil
         
-        if myContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics,
+        if myContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthentication,
                                        error: &authError)
         {
             myContext.evaluatePolicy(
@@ -159,9 +159,10 @@ class OrderController: UITableViewController
     // - MARK: Lifecycle
     
     override func viewDidLoad() {
-        cookieQtyFld.inputAccessoryView = keyboardAccessory
-        muffinQtyFld.inputAccessoryView = keyboardAccessory
-        sconeQtyFld.inputAccessoryView  = keyboardAccessory
+        [cookieQtyFld, muffinQtyFld, sconeQtyFld].forEach() { (field: UITextField) in
+            field.inputAccessoryView = keyboardAccessory
+            field.delegate = self
+        }
         
         updateTotalAmount()
     }
@@ -205,6 +206,12 @@ class OrderController: UITableViewController
         totalLbl.text = amountFormatter.string(from: NSNumber(value: total))
     }
     
+    
+    // MARK: UITextFieldDelegate implementation
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
     
     
     // MARK: - Utility methods
