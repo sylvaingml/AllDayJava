@@ -105,8 +105,7 @@
 				E4EAD73E1EB8956500211EB9 /* Order.swift */,
 				E48CBD371EB9F90300035C20 /* CoffeeCell.swift */,
 			);
-			name = AllDayJava;
-			path = Voiceless;
+			path = AllDayJava;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +417,7 @@
 				E42DC0FC1EBA88DB00D73E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4EAD71E1EB556FE00211EB9 /* Build configuration list for PBXProject "AllDayJava" */ = {
 			isa = XCConfigurationList;
