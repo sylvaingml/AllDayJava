@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E42DC0F71EBA88DB00D73E13 /* AllDayJavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DC0F61EBA88DB00D73E13 /* AllDayJavaUITests.swift */; };
+		E42DC1011EBE6B0F00D73E13 /* build-and-test.sh in Resources */ = {isa = PBXBuildFile; fileRef = E42DC0FF1EBE6B0F00D73E13 /* build-and-test.sh */; };
+		E42DC1021EBE6B0F00D73E13 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = E42DC1001EBE6B0F00D73E13 /* build.sh */; };
+		E42DC1041EBE6B1700D73E13 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E42DC1031EBE6B1700D73E13 /* README.md */; };
 		E48CBD381EB9F90300035C20 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CBD371EB9F90300035C20 /* CoffeeCell.swift */; };
 		E4EAD7271EB556FE00211EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */; };
 		E4EAD7291EB556FE00211EB9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAD7281EB556FE00211EB9 /* FirstViewController.swift */; };
@@ -33,6 +36,9 @@
 		E42DC0F41EBA88DB00D73E13 /* AllDayJavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllDayJavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42DC0F61EBA88DB00D73E13 /* AllDayJavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDayJavaUITests.swift; sourceTree = "<group>"; };
 		E42DC0F81EBA88DB00D73E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42DC0FF1EBE6B0F00D73E13 /* build-and-test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-and-test.sh"; sourceTree = "<group>"; };
+		E42DC1001EBE6B0F00D73E13 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		E42DC1031EBE6B1700D73E13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E48CBD371EB9F90300035C20 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
 		E4EAD7231EB556FE00211EB9 /* AllDayJava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDayJava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EAD7261EB556FE00211EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +79,20 @@
 			path = AllDayJavaUITests;
 			sourceTree = "<group>";
 		};
+		E42DC0FE1EBE6AFA00D73E13 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E42DC0FF1EBE6B0F00D73E13 /* build-and-test.sh */,
+				E42DC1001EBE6B0F00D73E13 /* build.sh */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
 		E4EAD71A1EB556FE00211EB9 = {
 			isa = PBXGroup;
 			children = (
+				E42DC1031EBE6B1700D73E13 /* README.md */,
+				E42DC0FE1EBE6AFA00D73E13 /* scripts */,
 				E4EAD7251EB556FE00211EB9 /* AllDayJava */,
 				E42DC0F51EBA88DB00D73E13 /* AllDayJavaUITests */,
 				E4EAD7241EB556FE00211EB9 /* Products */,
@@ -203,6 +220,8 @@
 				E4EAD7331EB556FE00211EB9 /* LaunchScreen.storyboard in Resources */,
 				E4EAD7301EB556FE00211EB9 /* Assets.xcassets in Resources */,
 				E4EAD72E1EB556FE00211EB9 /* Main.storyboard in Resources */,
+				E42DC1011EBE6B0F00D73E13 /* build-and-test.sh in Resources */,
+				E42DC1021EBE6B0F00D73E13 /* build.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +243,7 @@
 				E4EAD73D1EB8954200211EB9 /* OrderController.swift in Sources */,
 				E4EAD72B1EB556FE00211EB9 /* SecondViewController.swift in Sources */,
 				E4EAD73F1EB8956500211EB9 /* Order.swift in Sources */,
+				E42DC1041EBE6B1700D73E13 /* README.md in Sources */,
 				E4EAD7271EB556FE00211EB9 /* AppDelegate.swift in Sources */,
 				E4EAD7291EB556FE00211EB9 /* FirstViewController.swift in Sources */,
 				E48CBD381EB9F90300035C20 /* CoffeeCell.swift in Sources */,
