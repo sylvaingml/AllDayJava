@@ -386,9 +386,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KC7UKYADNB;
-				INFOPLIST_FILE = Voiceless/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AllDayJava/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.AllDayJava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -399,9 +399,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KC7UKYADNB;
-				INFOPLIST_FILE = Voiceless/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AllDayJava/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.AllDayJava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
