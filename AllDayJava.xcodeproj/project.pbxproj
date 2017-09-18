@@ -283,7 +283,7 @@
 				DEVELOPMENT_TEAM = KC7UKYADNB;
 				INFOPLIST_FILE = Voiceless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -296,7 +296,7 @@
 				DEVELOPMENT_TEAM = KC7UKYADNB;
 				INFOPLIST_FILE = Voiceless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.sgintech.demo.wcag.Voiceless.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
